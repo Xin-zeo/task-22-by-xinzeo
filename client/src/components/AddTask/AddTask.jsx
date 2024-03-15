@@ -17,7 +17,7 @@ function AddTask({ setAddTaskWindow }) {
       year: "numeric",
     });
     try {
-      await axios.post("http://localhost:3001/api/v1/tasks", {
+      await axios.post("https://task-22-by-xinzeo.onrender.com/api/v1/tasks", {
         user,
         taskName,
         description,

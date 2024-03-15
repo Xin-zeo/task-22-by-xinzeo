@@ -29,7 +29,7 @@ const SignIn = ({ setSignIn }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/v1/user/signIn",
+        "https://task-22-by-xinzeo.onrender.com/api/v1/user/signIn",
         {
           username,
           password,
@@ -72,7 +72,7 @@ const SignUp = ({ setSignIn }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/v1/user/signUp",
+        "https://task-22-by-xinzeo.onrender.com/api/v1/user/signUp",
         {
           username,
           password,

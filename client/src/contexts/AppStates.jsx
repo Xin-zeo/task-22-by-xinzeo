@@ -14,7 +14,7 @@ const AppStates = (props) => {
       const userId = window.localStorage.getItem("userID");
       try {
         const response = await axios.get(
-          `http://localhost:3001/api/v1/tasks/${userId}`
+          `https://task-22-by-xinzeo.onrender.com/api/v1/tasks/${userId}`
         );
         setAllTasks(response.data);
       } catch {

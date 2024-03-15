@@ -11,7 +11,7 @@ function UpdateTask({ id, taskName, description, priority, status }) {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:3001/api/v1/tasks/${id}`, {
+      await axios.put(`https://task-22-by-xinzeo.onrender.com/api/v1/tasks/${id}`, {
         taskName: newTaskName,
         description: newDescription,
         priority: newPriority,
@@ -23,7 +23,7 @@ function UpdateTask({ id, taskName, description, priority, status }) {
   };
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:3001/api/v1/tasks/${id}`);
+      await axios.delete(`https://task-22-by-xinzeo.onrender.com/api/v1/tasks/${id}`);
     } catch {
       alert("Network Error!!");
     }
