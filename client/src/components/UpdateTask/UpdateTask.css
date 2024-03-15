@@ -1,0 +1,75 @@
+.task-option-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.75);
+  right: 0;
+  top: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  filter: drop-shadow(1px 1px 2px);
+  border-radius: 10px;
+  z-index: 1;
+}
+.edit-option-btns {
+  width: 4rem;
+}
+
+.edit-options {
+  display: flex;
+  flex-direction: column;
+}
+.edit-options label {
+  font-weight: 600;
+  font-size: x-small;
+  display: flex;
+}
+.edit-options-label {
+  display: flex;
+  flex-direction: column;
+}
+.edit-options-label input,
+.edit-options-label textarea {
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  font-size: x-small;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.edit-options-label textarea {
+  height: 4rem;
+}
+
+.update-btn {
+  width: 4rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.status-options,
+.selected-status {
+  font-size: x-small;
+  width: 5rem;
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.status-options {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.status-options:hover {
+  color: black;
+}
+.status-options:active {
+  transform: scale(0.9);
+}
+
+.selected-status {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.5);
+}

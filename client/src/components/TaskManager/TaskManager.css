@@ -1,0 +1,81 @@
+#taskManagement {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.columnOne,
+.columnTwo,
+.columnThree {
+  width: 30vw;
+  padding: 0 1rem;
+  border-radius: 10px;
+  height: 73svh;
+}
+
+.emptyListTexts {
+  text-align: center;
+  color: red;
+}
+
+.columnOne {
+  background-color: rgba(0, 0, 255, 0.25);
+  color: blue;
+}
+
+.columnTwo {
+  background-color: rgba(255, 166, 0, 0.25);
+  color: orange;
+}
+
+.columnThree {
+  background-color: rgba(0, 128, 0, 0.25);
+  color: green;
+}
+
+.hideColumns {
+  display: none;
+}
+
+.columnHeading {
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  gap: 1rem;
+}
+
+#taskCountBlue,
+#taskCountOrange,
+#taskCountGreen {
+  padding: 0.5rem 1em;
+  border-radius: 10px;
+}
+
+#taskCountBlue {
+  background-color: rgba(0, 0, 255, 0.25);
+}
+
+#taskCountOrange {
+  background-color: rgba(255, 166, 0, 0.25);
+}
+
+#taskCountGreen {
+  background-color: rgba(0, 128, 0, 0.25);
+}
+
+.column-tasks {
+  height: 60svh;
+  overflow-y: auto;
+}
+
+@media Screen and (max-width: 720px) {
+  #taskManagement {
+    flex-direction: column;
+  }
+  .columnOne,
+  .columnTwo,
+  .columnThree {
+    width: 80vw;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+nav {
+  border-bottom: 1px solid;
+  padding: 1rem 0;
+}
+
+nav,
+#logoContainer,
+#userContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logoContainer,
+#userContainer {
+  margin: 0 4rem;
+  gap: 0 1rem;
+  font-weight: bold;
+}
+
+#userContainer {
+  background-color: lightgrey;
+  padding: 0 2rem;
+  border-radius: 10px;
+}
+
+#signOut {
+  background-color: rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(2px 2px 2px);
+  padding: 0.5rem 1rem;
+}
+#signOut:active {
+  transform: scale(0.99);
+}
+
+@media Screen and (max-width: 720px) {
+  #userContainer {
+    display: none;
+  }
+  #logoContainer {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  #signOut {
+    margin-right: 1rem;
+  }
+}

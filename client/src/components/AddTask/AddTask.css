@@ -1,0 +1,111 @@
+#addTaskWindow {
+  position: absolute;
+  align-self: flex-start;
+  width: 50vw;
+  border: 1px solid;
+  border-radius: 10px;
+  backdrop-filter: blur(0.5rem);
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+#addTaskHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+#closeAddTask {
+  border: none;
+  background: none;
+  margin-right: 1rem;
+  padding: 0;
+  height: 2rem;
+  width: 4rem;
+}
+#closeAddTask:active {
+  transform: scale(0.75);
+}
+
+#newTaskForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 8rem;
+}
+#newTaskForm input,
+textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+}
+#newTaskForm textarea {
+  height: 6rem;
+  resize: none;
+}
+
+.taskInputLabels {
+  margin: 0;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#secondaryInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+#radioInput {
+  text-align: right;
+}
+#radioInput label {
+  margin-left: 1rem;
+}
+
+#addTask {
+  margin: 1rem 8rem;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  border: 1px solid;
+  font-weight: bold;
+}
+#addTask:active {
+  transform: scale(0.99);
+}
+
+@media Screen and (max-width: 720px) {
+  #addTaskWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+  }
+  #newTaskForm {
+    margin: 0 2rem;
+  }
+  #newTaskForm textarea {
+    height: 10rem;
+  }
+  .taskInputLabels {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  #secondaryInputs {
+    flex-direction: column;
+  }
+  #addTask {
+    margin: 3rem 2rem;
+    font-size: large;
+  }
+  #addTaskHeading {
+    font-size: larger;
+  }
+  #closeAddTask {
+    margin-right: 0;
+  }
+}

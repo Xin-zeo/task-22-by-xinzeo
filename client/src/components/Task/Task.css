@@ -1,0 +1,49 @@
+.tasks-container h3 {
+  margin: 0;
+  margin-top: 0.25rem;
+  color: black;
+}
+.tasks-container h5 {
+  margin: 0;
+  margin-top: 0.5rem;
+  font-weight: 100;
+}
+.tasks-container p {
+  margin: 0;
+  margin-top: 0.25rem;
+  font-weight: 100;
+  font-size: small;
+  color: darkslategrey;
+}
+
+.task-container {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.priority-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.priority-bar p {
+  font-size: x-small;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.task-option-btn {
+  background: none;
+  border: none;
+  font-size: large;
+  font-weight: bold;
+}
+.task-option-btn:active {
+  font-size: small;
+}
